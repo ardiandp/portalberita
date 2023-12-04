@@ -22,3 +22,4 @@ Route::get('/', function () {
 });
 
 Route::get('/api/berita', 'App\Http\Controllers\BeritaController@index');
+Route::post('/api/berita/store', 'App\Http\Controllers\BeritaController@store');
