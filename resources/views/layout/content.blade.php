@@ -125,32 +125,33 @@
               <ul class="menu-sub">
                 <li class="menu-item">
                   <a
-                    href="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/html/vertical-menu-template/dashboards-crm.html"
+                    href="master/kategori"
                     target="_blank"
                     class="menu-link">
-                    <div data-i18n="CRM">CRM</div>
+                    <div data-i18n="CRM">Kategori</div>
                     <div class="badge bg-label-primary fs-tiny rounded-pill ms-auto">Pro</div>
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="index.html" class="menu-link">
-                    <div data-i18n="Analytics">Analytics</div>
+                  
+                  <a href="master/berita" class="menu-link">
+                    <div data-i18n="Analytics">Berita</div>
                   </a>
                 </li>
              
               </ul>
             </li>
 
-            <!-- Layouts -->
             <li class="menu-item">
-              <a href="javascript:void(0);" class="menu-link menu-toggle">
-                <i class="menu-icon tf-icons bx bx-layout"></i>
-                <div data-i18n="Layouts">Layouts</div>
-              </a>
-
+            <a href="" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons bx bx-home-circle"></i>
+                <div data-i18n="Dashboards">Users</div>
               
-            </li>
+            </a>
+                </li>
 
+            <!-- Layouts -->
+           
           
           
             <!-- Pages -->
