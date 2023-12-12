@@ -8,9 +8,7 @@ class BeritaController extends Controller
 {
     public function index()
     {
-        $berita = Berita::all();
-       // return view('berita', compact('berita'));
-        return response()->json($berita);
+      return view ('berita.index');
     }
 
     public function store (Request $request)

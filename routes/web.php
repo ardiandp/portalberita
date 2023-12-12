@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BeritaController;
+use App\Http\Controllers\BerandaController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,9 +18,14 @@ use App\Http\Controllers\BeritaController;
     return view('welcome');
 }); */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('layout.content');
-});
+}); */
+Route::get('/', [BerandaController::class, 'index'])->name('beranda.index');
+Route::get('/beranda', [BerandaController::class, 'index'])->name('beranda.index');
+
+Route::get('/berita', [BeritaController::class, 'index'])->name('berita.index');
+Route::post('/berita/store', 'App\Http\Controllers\BeritaController@store');
 
 Route::get('/api/berita', 'App\Http\Controllers\BeritaController@index');
 Route::post('/api/berita/store', 'App\Http\Controllers\BeritaController@store');
