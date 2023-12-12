@@ -69,18 +69,27 @@
                 <div class="badge bg-danger rounded-pill ms-auto">5</div>
               </a>
               <ul class="menu-sub">
+              <li class="menu-item">
+                  <a
+                    href="{{url('/beranda')}}"
+                    target=""
+                    class="menu-link">
+                    <div data-i18n="CRM">beranda</div>
+                    
+                  </a>
+                </li>
                 <li class="menu-item">
                   <a
                     href="kategori"
-                    target="_blank"
+                    target="{{url('/kategori')}}"
                     class="menu-link">
                     <div data-i18n="CRM">Kategori</div>
-                    <div class="badge bg-label-primary fs-tiny rounded-pill ms-auto">Pro</div>
+                    
                   </a>
                 </li>
                 <li class="menu-item">
                   
-                  <a href="berita" class="menu-link">
+                  <a href="{{url('/berita')}}" class="menu-link">
                     <div data-i18n="Analytics">Berita</div>
                   </a>
                 </li>
@@ -89,7 +98,7 @@
             </li>
 
             <li class="menu-item">
-            <a href="" class="menu-link menu-toggle">
+            <a href="{{url('/users')}}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-home-circle"></i>
                 <div data-i18n="Dashboards">Users</div>
               

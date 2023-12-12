@@ -12,4 +12,10 @@ class BerandaController extends Controller
     {
         return view('beranda');
     }
+
+    public function getBerita()
+    {
+        $berita = Berita::select(['judul', 'isi', 'penulis', 'tanggal']);
+        return Datatables::of($berita)->make(true);
+    }
 }
